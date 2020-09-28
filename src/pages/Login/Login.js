@@ -10,7 +10,7 @@ const Login = () => {
       <form autoComplete="nope">
         <div className="user-login__form-control">
           <label htmlFor="email">E-mail</label>
-          <input id="email" type="text" name="email" autoComplete="off" />
+          <input  id="email" type="text" name="email" autoComplete="off" />
         </div>
         <div className="user-login__form-control">
           <label htmlFor="password">Senha</label>
