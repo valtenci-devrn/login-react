@@ -1,14 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import './App.css';
 
-import { Button } from 'reactstrap';
+import Login from './pages/Login/Login';
+import Home from './pages/Home/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <Button color="warning">warning</Button>
-    </div>
-  );
-}
+
+
+
+const App = () => (
+<Router>
+  <Switch>
+  <Route path="/" component={Login} />
+  <Route path="/home" component={Home} />
+  </Switch>
+</Router>
+)
+
 
 export default App;
